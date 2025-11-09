@@ -314,7 +314,9 @@ const Header = () => {
                                 handleNavigate(
                                   link.href,
                                   authUserType,
-                                  loggedInUserDetails.id
+                                  loggedInUserDetails?.id
+                                    ? String(loggedInUserDetails.id)
+                                    : ""
                                 )
                               )
                             }
