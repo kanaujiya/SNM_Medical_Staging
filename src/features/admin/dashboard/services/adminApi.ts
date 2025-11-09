@@ -9,14 +9,14 @@ export const AdminApi = createApi({
   endpoints: (builder) => ({
     getDashboardStats: builder.query<void, void>({
       query: () => ({
-        url: "/dashboard/stats",
+        url: "/api/dashboard/stats",
         method: "GET",
       }),
       providesTags: ["AdminStats"],
     }),
     getUserDetails: builder.query<void, void>({
       query: () => ({
-        url: "/dashboard/profile",
+        url: "/api/dashboard/profile",
         method: "GET",
       }),
       providesTags: ["UserDetails"],
